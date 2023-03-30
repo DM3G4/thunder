@@ -1,3 +1,6 @@
-export const VOLT = "flash_on"
-export const SYNC = "cloud_sync"
-export const SYNC_DONE = "cloud_done"
+export const MENU = 'menu'
+export const SYNC = 'sync'
+export const SYNC_DONE = 'cloud_done'
+export const USER = 'person'
+export const VOLT = 'flash_on'
+export const CLOSE = 'close'
