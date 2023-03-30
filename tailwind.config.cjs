@@ -39,5 +39,5 @@ module.exports = {
 		},
 	},
 	// TODO: Remove this if not used
-	plugins: [require('@tailwindcss/forms')],
+	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 }

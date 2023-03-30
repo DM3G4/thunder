@@ -48,5 +48,6 @@
 			</button>
 		</div>
 	</div>
+	<!-- TODO: Add filters -->
 	<slot />
 </div>
