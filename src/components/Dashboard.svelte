@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Icon from './Icon.svelte'
 	import { SYNC, VOLT, USER, MENU, CLOSE, SYNC_DONE } from '../lib/icons'
+	import Separator from './Separator.svelte'
 
 	// <!-- TODO: Implement dropdown logic -->
+	// <!-- TODO: Add tooltips -->
 	let showDropdown: boolean = false
-	let showMenu: boolean = false // Collapsed menu
+	let isCollapsed: boolean = false
 </script>
 
 <div class="min-h-full">
@@ -43,8 +45,7 @@
 						<Icon name="{SYNC}" fill />
 					</button>
 
-					<!-- Separator -->
-					<div class="h-6 w-px bg-dark-border"></div>
+					<Separator />
 
 					<!-- TODO: Implement dropdown logic -->
 					<!-- Profile dropdown -->
@@ -109,7 +110,7 @@
 						aria-controls="mobile-menu"
 						aria-expanded="false">
 						<span class="sr-only">Open main menu</span>
-						{#if showMenu}
+						{#if isCollapsed}
 							<Icon name="{CLOSE}" class="h-6 w-6" />
 						{:else}
 							<Icon name="{MENU}" class="h-6 w-6" />
@@ -174,11 +175,10 @@
 		{/if}
 	</nav>
 
-	<div class="py-10">
-		<main>
-			<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-				<slot />
-			</div>
-		</main>
-	</div>
+	<!-- App content -->
+	<main>
+		<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+			<slot />
+		</div>
+	</main>
 </div>

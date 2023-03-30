@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply font-poppins font-bold;
+	}
+	h2 {
+		@apply font-inter font-bold;
+	}
+}

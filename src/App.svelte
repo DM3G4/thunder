@@ -1,17 +1,18 @@
 <script lang="ts">
-  import "./app.css"
-  import Dashboard from "./components/Dashboard.svelte"
+	import './app.css'
+	import Dashboard from './components/Dashboard.svelte'
+	import Header from './components/Header.svelte'
+	import Section from './components/Section.svelte'
 </script>
 
 <div class="h-full min-h-screen bg-dark-100">
-  <Dashboard>
-    <header class="bg-dark-200 shadow">
-      <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold tracking-tight text-dark-1100">Dashboard</h1>
-      </div>
-    </header>
-    <div class="flex justify-center items-center">
-      <h1 class="text-3xl font-bold tracking-tight text-dark-1100">WIP</h1>
-    </div>
-  </Dashboard>
+	<!-- App Layout (Dashboard) -->
+	<Dashboard>
+		<!-- App content -->
+		<!-- TODO: Make header title dynamic -->
+		<Header />
+		<Section name="Watchlist" />
+		<Section name="Favorites" />
+		<Section name="Seen" />
+	</Dashboard>
 </div>
