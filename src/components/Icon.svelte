@@ -2,10 +2,9 @@
 	let className: string = ''
 	export { className as class }
 	export let name!: string
-	export let fill: boolean = false
-	export let weight: number = 400
-	export let size: number = 48
-	const styles = `font-variation-settings: 'FILL' ${fill ? 1 : 0}, 'wght' ${weight}, 'GRAD' 0, 'opsz' ${size};`
+	export let outline: boolean = false
+	export let size: number = 24
+	const styles = `font-variation-settings: 'FILL' ${outline ? 0 : 1}; font-size: ${size}px `
 </script>
 
 <div class="{className} flex justify-center items-center">

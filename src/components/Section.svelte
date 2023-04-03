@@ -44,7 +44,7 @@
 			<button
 				class="rounded-full text-dark-700 hover:text-dark-900 focus:outline-none focus:ring-1 focus:ring-dark-700">
 				<!-- EXPAND: -translate-y-[1px] -->
-				<Icon name="{EXPAND}" fill class="translate-y-[1px]" />
+				<Icon name="{EXPAND}" class="translate-y-[1px]" />
 			</button>
 		</div>
 	</div>
