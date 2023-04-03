@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './app.css'
-	import Dashboard from './components/Dashboard.svelte'
+	import Dashboard from './components/Dashboard/Dashboard.svelte'
 	import Header from './components/Header.svelte'
 	import List from './components/List.svelte'
 	import Section from './components/Section.svelte'
